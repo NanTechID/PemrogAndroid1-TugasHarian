@@ -4,6 +4,13 @@ import 'thirdpage.dart';
 import 'fourthpage.dart';
 import 'fifthpage.dart';
 import 'themes.dart';
+import 'pertemuan9.dart';
+import 'pertemuan10.dart';
+import 'pertemuan11.dart';
+import 'pertemuan12.dart';
+import 'pertemuan13.dart';
+import 'pertemuan14.dart';
+import 'pertemuan15.dart';
 
 // Global theme mode controller. Default to system.
 final ValueNotifier<ThemeMode> appThemeMode = ValueNotifier(ThemeMode.system);
@@ -192,6 +199,117 @@ class MyHomePage extends StatelessWidget {
                           );
                         },
                         child: Text('Ke Halaman Stateful Widget (Pertemuan 7)'),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => StudentRegistrationPage(),
+                            ),
+                          );
+                        },
+                        child: Text('Ke Halaman Input & Form (Pertemuan 8)'),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => StylingThemingPage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          'Ke Halaman Styling & Theming (Pertemuan 10)',
+                        ),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => AssetMediaPage(),
+                            ),
+                          );
+                        },
+                        child: Text('Ke Halaman Asset & Media (Pertemuan 11)'),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ApiPage()),
+                          );
+                        },
+                        child: Text(
+                          'Ke Halaman HTTP Request & API (Pertemuan 12)',
+                        ),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SharedPreferencesPage(),
+                            ),
+                          );
+                        },
+                        child: Text('Ke Halaman Local Storage (Pertemuan 13)'),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SQLitePage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          'Ke Halaman Database SQLite (Pertemuan 14)',
+                        ),
+                      ),
+                      SizedBox(height: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: Size.fromHeight(48),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BuildDeployPage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          'Ke Halaman Build & Deployment (Pertemuan 15)',
+                        ),
                       ),
                     ],
                   ),
